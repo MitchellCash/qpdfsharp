@@ -15,6 +15,9 @@ set -euo pipefail
 EXPECTED_EXPORTS=(
   _qpdfsharp_get_qpdf_version
   _qpdfsharp_get_abi_version
+  _qpdfsharp_protect_with_owner_password
+  _qpdfsharp_inspect_encryption
+  _qpdfsharp_free_buffer
 )
 ALLOWED_DEPENDENCIES=(
   @rpath/libQpdfSharp.dylib

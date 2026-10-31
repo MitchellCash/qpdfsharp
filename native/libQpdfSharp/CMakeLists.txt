@@ -66,3 +66,9 @@ enable_testing()
 add_executable(smoke tests/smoke.c)
 target_link_libraries(smoke PRIVATE QpdfSharp)
 add_test(NAME smoke COMMAND smoke)
+
+add_executable(protect_tests tests/protect_tests.c)
+target_link_libraries(protect_tests PRIVATE QpdfSharp)
+target_compile_definitions(protect_tests PRIVATE
+  QPDFSHARP_TEST_CONTENT_DIR="${CMAKE_CURRENT_SOURCE_DIR}/../../tests/Content/pdfs")
+add_test(NAME protect_tests COMMAND protect_tests)

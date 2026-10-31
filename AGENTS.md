@@ -33,9 +33,9 @@ qpdfsharp/
 │  ├─ QpdfSharp.NativeAssets.Linux/
 │  ├─ QpdfSharp.NativeAssets.macOS/
 │  └─ QpdfSharp.NativeAssets.Win32/
-├─ tests/                            # (planned)
+├─ tests/
 │  ├─ Content/pdfs/                  # shared test assets (native and managed tests both use these)
-│  └─ QpdfSharp.Tests/
+│  └─ QpdfSharp.Tests/               # (planned)
 ├─ samples/Basic/Console/QpdfSharpSample/   # (planned) consumes the packed .nupkg files
 ├─ scripts/  pack.sh  run-sample.sh  # (planned)
 ├─ .github/workflows/ci.yml          # (planned)
@@ -43,8 +43,8 @@ qpdfsharp/
    └─ output/native/{windows/<arch>, linux/<arch>, osx}/libQpdfSharp.*
 ```
 
-Only `native/libQpdfSharp/`, the Linux version script and the macOS scripts exist so far; the
-Linux `build.sh`/`check.sh` are planned.
+Only `native/libQpdfSharp/`, the Linux version script, the macOS scripts and the shared test PDFs
+in `tests/Content/pdfs/` exist so far; the Linux `build.sh`/`check.sh` are planned.
 
 ## Local prerequisites (macOS)
 
