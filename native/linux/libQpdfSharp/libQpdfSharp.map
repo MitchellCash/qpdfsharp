@@ -1,0 +1,6 @@
+libQpdfSharp {
+    global:
+        qpdfsharp_*;
+    local:
+        *;
+};
